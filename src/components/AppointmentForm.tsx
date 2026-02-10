@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Send, Calendar, Clock } from 'lucide-react';
-import { SectionHeading } from './ui/SectionHeading';
+import { Send, Clock } from 'lucide-react';
 
 export const AppointmentForm = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +16,7 @@ export const AppointmentForm = () => {
     const message = `Hello VEDANTA DENTAL CARE,%0A%0AI would like to book an appointment.%0A%0AName: ${formData.name}%0APhone: ${formData.phone}%0APreferred Date: ${formData.date}%0ATime Slot: ${formData.time}`;
     
     // Redirect to WhatsApp
-    window.open(`https://wa.me/919999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/917000560853?text=${message}`, '_blank');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -56,7 +54,7 @@ export const AppointmentForm = () => {
 
              <div className="mt-12 relative z-10">
                <p className="text-sm text-dental-300">Need immediate assistance?</p>
-               <p className="text-xl font-bold">+91 99999 99999</p>
+               <p className="text-xl font-bold">+91 70005 60853</p>
              </div>
           </div>
 

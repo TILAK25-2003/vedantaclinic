@@ -10,16 +10,14 @@ export const Footer = () => {
           {/* Brand Info */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-               <div className="w-10 h-10 bg-dental-700 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                V
-              </div>
-              <div className="flex flex-col text-white">
-                <span className="font-bold text-lg leading-none">VEDANTA</span>
-                <span className="text-xs tracking-wider font-medium">DENTAL CARE</span>
-              </div>
+               <img 
+                 src="https://images.dualite.app/4febe671-55e3-4707-99d4-d23cf5e031b9/WhatsApp_Image_2026-02-10_at_9.14.54_PM-50e7dcf4-63e6-4e34-ae5b-01a5db98460e.webp" 
+                 alt="Vedanta Dental Care Logo" 
+                 className="h-12 w-auto object-contain"
+               />
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              Providing advanced, pain-free dental care in Raipur. 
+              Providing advanced, pain-free dental care in Bihar. 
               Led by Dr. B. Chaudhary, dedicated to bringing back your confident smile.
             </p>
             <div className="flex gap-4">
@@ -51,7 +49,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-dental-500 shrink-0" />
-                <span>+91 99999 99999</span>
+                <span>+91 70005 60853</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-dental-500 shrink-0" />
@@ -60,25 +58,17 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Map */}
-          <div className="h-48 rounded-xl overflow-hidden bg-gray-800 relative">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.549083148077!2d81.62964131493637!3d21.25138448587817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda23be28229%3A0x163ee120449e4547!2sRaipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1625561234567!5m2!1sen!2sin" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy"
-              title="Clinic Location"
-              className="grayscale hover:grayscale-0 transition-all duration-500"
-            ></iframe>
+          {/* Map Button */}
+          <div className="h-48 rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center relative">
+            <div className="absolute inset-0 opacity-20 bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/2275px-Google_Maps_Logo_2020.svg.png')] bg-center bg-no-repeat bg-contain"></div>
             <a 
               href="https://share.google/Yze2ITOIYuxK6kF0F" 
               target="_blank" 
-              rel="noreferrer"
-              className="absolute bottom-2 right-2 bg-white text-black text-xs px-2 py-1 rounded shadow-md font-medium hover:bg-gray-100"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold transition-all shadow-lg hover:shadow-blue-600/30 flex items-center gap-2 z-10"
             >
-              Get Directions
+              <MapPin className="w-5 h-5" />
+              View on Google Maps
             </a>
           </div>
         </div>

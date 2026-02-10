@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, Calendar } from 'lucide-react';
+import { Menu, X, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const Navbar = () => {
@@ -28,13 +28,11 @@ export const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-dental-700 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-              V
-            </div>
-            <div className={`flex flex-col ${scrolled ? 'text-dental-900' : 'text-dental-900 md:text-white'}`}>
-              <span className="font-bold text-lg leading-none">VEDANTA</span>
-              <span className="text-xs tracking-wider font-medium">DENTAL CARE</span>
-            </div>
+            <img 
+              src="https://images.dualite.app/4febe671-55e3-4707-99d4-d23cf5e031b9/WhatsApp_Image_2026-02-10_at_9.14.54_PM-50e7dcf4-63e6-4e34-ae5b-01a5db98460e.webp" 
+              alt="Vedanta Dental Care Logo" 
+              className="h-12 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Menu */}
@@ -62,7 +60,7 @@ export const Navbar = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 rounded-lg ${scrolled ? 'text-dental-900' : 'text-dental-900'}`} // Always dark on mobile for visibility against white bg of menu or mixed bg
+            className={`md:hidden p-2 rounded-lg ${scrolled ? 'text-dental-900' : 'text-dental-900'}`} 
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

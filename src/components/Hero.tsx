@@ -28,7 +28,7 @@ export const Hero = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Advanced & <br />
               <span className="text-dental-400">Pain-Free</span> Dental Care <br />
-              in Raipur
+              in Bihar
             </h1>
             
             <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-8 text-gray-200">
@@ -61,9 +61,9 @@ export const Hero = () => {
                 Book Appointment
               </a>
               <a 
-                href="https://wa.me/919999999999" // Placeholder, will be updated by user
+                href="https://wa.me/917000560853"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="px-8 py-4 bg-white hover:bg-gray-50 text-dental-900 rounded-lg font-bold text-lg shadow-lg transition-all flex items-center justify-center gap-2"
               >
                 <MessageCircle className="w-5 h-5 text-green-600" />
