@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, MessageCircle } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 export const Hero = () => {
   return (
@@ -32,8 +32,8 @@ export const Hero = () => {
             </h1>
             
             <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-8 text-gray-200">
-              <div className="flex items-center gap-3 bg-white/10 p-3 rounded-lg backdrop-blur-sm border border-white/10">
-                <div className="h-12 w-12 rounded-full overflow-hidden border-2 border-dental-400">
+              <div className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10">
+                <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-dental-400 shrink-0">
                   <img 
                     src="https://images.dualite.app/4febe671-55e3-4707-99d4-d23cf5e031b9/WhatsApp_Image_2026-02-10_at_9.05.40_PM-a954abd5-3552-4a32-a911-72483d5f4ba4.webp" 
                     alt="Dr. B. Chaudhary" 
@@ -41,7 +41,7 @@ export const Hero = () => {
                   />
                 </div>
                 <div>
-                  <p className="font-bold text-white">Dr. B. Chaudhary</p>
+                  <p className="font-bold text-white text-lg">Dr. B. Chaudhary</p>
                   <p className="text-sm text-dental-200">BDS (Dental Surgeon) • 7+ Years Exp.</p>
                 </div>
               </div>
@@ -55,19 +55,10 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#appointment"
-                className="px-8 py-4 bg-dental-600 hover:bg-dental-700 text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-dental-600/30 transition-all flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-dental-600 hover:bg-dental-700 text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-dental-600/30 transition-all flex items-center justify-center gap-3"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-6 h-6" />
                 Book Appointment
-              </a>
-              <a 
-                href="https://wa.me/917000560853"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 bg-white hover:bg-gray-50 text-dental-900 rounded-lg font-bold text-lg shadow-lg transition-all flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-4 h-4 text-green-600" />
-                Chat on WhatsApp
               </a>
             </div>
           </motion.div>

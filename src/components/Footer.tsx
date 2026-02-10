@@ -13,7 +13,7 @@ export const Footer = () => {
                <img 
                  src="https://images.dualite.app/4febe671-55e3-4707-99d4-d23cf5e031b9/WhatsApp_Image_2026-02-10_at_9.14.54_PM-50e7dcf4-63e6-4e34-ae5b-01a5db98460e.webp" 
                  alt="Vedanta Dental Care Logo" 
-                 className="h-12 w-auto object-contain"
+                 className="h-12 w-auto object-contain rounded-full"
                />
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
