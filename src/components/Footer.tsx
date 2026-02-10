@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -21,9 +21,24 @@ export const Footer = () => {
               Led by Dr. B. Chaudhary, dedicated to bringing back your confident smile.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-dental-500 transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-dental-500 transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-dental-500 transition-colors"><Twitter size={20} /></a>
+              <a 
+                href="https://www.instagram.com/vedanta_dentalcare?igsh=bDM2aXo1NG8wcDVr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-dental-500 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="https://www.facebook.com/share/1DRKR7QG6g/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-dental-500 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
             </div>
           </div>
 
@@ -45,7 +60,7 @@ export const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-dental-500 shrink-0 mt-0.5" />
-                <span>Raipur, Chhattisgarh</span>
+                <span>50 m inside Yadav nagar gate, Bhagwanpur, Muzaffarpur, Bihar-842001</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-dental-500 shrink-0" />
@@ -53,7 +68,9 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-dental-500 shrink-0" />
-                <span>contact@vedantadental.com</span>
+                <a href="mailto:raghav.chaudharybds@gmail.com" className="hover:text-white transition-colors">
+                  raghav.chaudharybds@gmail.com
+                </a>
               </li>
             </ul>
           </div>

@@ -40,13 +40,21 @@ export const AppointmentForm = () => {
                
                <div className="space-y-6">
                  <div>
-                   <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
+                   <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
                      <Clock className="w-5 h-5 text-dental-400" /> Clinic Timings
                    </h4>
-                   <div className="pl-7 text-sm text-gray-300 space-y-1">
-                     <p><span className="text-white font-medium">Mon - Sat:</span> 10:00 AM – 2:00 PM</p>
-                     <p className="pl-[74px]">4:00 PM – 7:00 PM</p>
-                     <p><span className="text-white font-medium">Sunday:</span> By Appointment Only</p>
+                   <div className="pl-7 space-y-4 text-sm text-gray-300">
+                     <div className="grid grid-cols-[80px_1fr] gap-2">
+                       <span className="text-white font-medium">Mon - Sat:</span>
+                       <div className="flex flex-col gap-1">
+                         <span>10:00 AM – 2:00 PM</span>
+                         <span>4:00 PM – 7:00 PM</span>
+                       </div>
+                     </div>
+                     <div className="grid grid-cols-[80px_1fr] gap-2">
+                       <span className="text-white font-medium">Sunday:</span>
+                       <span>By Appointment Only</span>
+                     </div>
                    </div>
                  </div>
                </div>

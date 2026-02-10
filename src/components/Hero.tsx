@@ -8,11 +8,11 @@ export const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.dualite.app/4febe671-55e3-4707-99d4-d23cf5e031b9/WhatsApp_Image_2026-02-10_at_9.14.54_PM-de7bb7b8-f06b-46ae-8114-b1379daeeff0.webp" 
-          alt="Vedanta Dental Care Clinic" 
+          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2068" 
+          alt="Modern Dental Clinic Interior" 
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-dental-900/90 via-dental-900/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dental-900/95 via-dental-900/80 to-dental-900/30" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -57,7 +57,7 @@ export const Hero = () => {
                 href="#appointment"
                 className="px-8 py-4 bg-dental-600 hover:bg-dental-700 text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-dental-600/30 transition-all flex items-center justify-center gap-2"
               >
-                <Calendar className="w-5 h-5" />
+                <Calendar className="w-4 h-4" />
                 Book Appointment
               </a>
               <a 
@@ -66,7 +66,7 @@ export const Hero = () => {
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-white hover:bg-gray-50 text-dental-900 rounded-lg font-bold text-lg shadow-lg transition-all flex items-center justify-center gap-2"
               >
-                <MessageCircle className="w-5 h-5 text-green-600" />
+                <MessageCircle className="w-4 h-4 text-green-600" />
                 Chat on WhatsApp
               </a>
             </div>
