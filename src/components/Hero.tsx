@@ -47,7 +47,7 @@ export const Hero = () => {
               </div>
               <div className="hidden md:block w-px h-12 bg-white/20"></div>
               <p className="max-w-md text-sm md:text-base">
-                Specialized Root Canal Consultant & Cosmetic Dentistry Expert. 
+                Senior Root Canal Consultant & Cosmetic Dentistry Expert. 
                 Ex-Resident at Jawaharlal Nehru Hospital, Bhilai.
               </p>
             </div>

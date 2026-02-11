@@ -7,7 +7,7 @@ const reviews = [
   {
     name: "Rahul Verma",
     rating: 5,
-    text: "Dr. Chaudhary is excellent! I had a root canal treatment done here and it was completely painless. The clinic is very clean and hygienic. Highly recommended for anyone in Raipur.",
+    text: "Dr. Chaudhary is excellent! I had a root canal treatment done here and it was completely painless. The clinic is very clean and hygienic. Highly recommended for anyone from Muzaffarpur.",
     date: "2 months ago"
   },
   {
