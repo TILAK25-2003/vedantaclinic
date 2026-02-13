@@ -6,8 +6,44 @@ export const AppointmentForm = () => {
     name: '',
     phone: '',
     date: '',
-    time: 'Morning (10-2)'
+    time: ''
   });
+
+  const generateTimeSlots = () => {
+    const slots = [];
+    
+    // Morning Slots (10:00 AM to 2:00 PM)
+    slots.push({ label: "--- Morning Slots ---", value: "", disabled: true });
+    const morningStart = 10;
+    const morningEnd = 14; // 2 PM
+    
+    for (let hour = morningStart; hour < morningEnd; hour++) {
+      const displayHour = hour > 12 ? hour - 12 : hour;
+      const ampm = hour >= 12 ? 'PM' : 'AM';
+      
+      slots.push(`${displayHour}:00 ${ampm}`);
+      slots.push(`${displayHour}:30 ${ampm}`);
+    }
+    slots.push("2:00 PM"); // Add last slot
+
+    // Evening Slots (4:00 PM to 7:00 PM)
+    slots.push({ label: "--- Evening Slots ---", value: "", disabled: true });
+    const eveningStart = 16; // 4 PM
+    const eveningEnd = 19; // 7 PM
+    
+    for (let hour = eveningStart; hour < eveningEnd; hour++) {
+      const displayHour = hour - 12;
+      const ampm = 'PM';
+      
+      slots.push(`${displayHour}:00 ${ampm}`);
+      slots.push(`${displayHour}:30 ${ampm}`);
+    }
+    slots.push("7:00 PM"); // Add last slot
+
+    return slots;
+  };
+
+  const timeSlots = generateTimeSlots();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -111,11 +147,21 @@ export const AppointmentForm = () => {
                   <label className="text-sm font-medium text-gray-700">Preferred Time</label>
                   <select
                     name="time"
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-dental-500 focus:ring-2 focus:ring-dental-100 outline-none transition-all bg-white"
                     onChange={handleChange}
+                    defaultValue=""
                   >
-                    <option>Morning (10:00 AM - 2:00 PM)</option>
-                    <option>Evening (4:00 PM - 7:00 PM)</option>
+                    <option value="" disabled>Select a time slot</option>
+                    {timeSlots.map((slot, index) => (
+                      typeof slot === 'string' ? (
+                        <option key={index} value={slot}>{slot}</option>
+                      ) : (
+                        <option key={index} value={slot.value} disabled={slot.disabled} className="font-bold bg-gray-100 text-gray-500">
+                          {slot.label}
+                        </option>
+                      )
+                    ))}
                   </select>
                 </div>
               </div>

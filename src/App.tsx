@@ -9,13 +9,15 @@ import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { SEO } from './components/SEO';
 import { SchemaJSONLD } from './components/SchemaJSONLD';
+import { SideNavigation } from './components/ui/SideNavigation';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
       <SEO />
       <SchemaJSONLD />
       <Navbar />
+      <SideNavigation />
       <main>
         <Hero />
         <About />
